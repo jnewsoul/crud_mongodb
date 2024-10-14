@@ -1,0 +1,15 @@
+<div class="page-title">
+    <h2>Cursos cadastrados</h2>
+</div>
+<div class="courses">
+    {{#each products}}
+        <div class="course">
+            <img src="{{this.image}}" alt="{{this.name}}">
+            <h3 class="course-name">{{this.name}}</h3>
+            <div class="course-infos">
+                <h3>R$ {{this.price}}</h3>
+                <a href="/products/{{this._id}}">Detalhes</a>
+            </div>
+        </div>
+    {{/each}}
+</div>

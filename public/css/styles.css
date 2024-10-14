@@ -1,0 +1,181 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: #2c2a36;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    min-width: 100vh;
+    min-height: 100vh;
+    display: flex;
+    background-color: #f0f8ff;
+}
+
+/* Navbar styles */
+#navbar {
+    min-width: 18%;
+    padding: 0.5em;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: rgb(20, 104, 160);
+    border-right: 2px solid #e8e7ec;
+}
+
+#navbar ul img {
+    display: block;
+    height: 20vh;
+    width: 20vh;
+    margin-top: 5em;
+}
+
+#navbar ul p {
+    text-align: center;
+    color: #deedf7;
+    margin-bottom: 3em;
+}
+
+#navbar ul li {
+    font-weight: 600;
+    display: block;
+    color: #fff;
+    margin: 0.3em;
+}
+
+/* Container styles */
+.container {
+    width: 100%;
+    margin: 1em;
+}
+
+/* Course styles */
+.courses {
+    min-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.course {
+    min-width: 23%;
+    max-width: 23%;
+    min-height: 300px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 1%;
+    padding: 1em;
+    background-color: #fbfafd;
+    border: 1px solid #deedf7;
+    transition: box-shadow 0.3s;
+}
+
+.course-name {
+    text-align: center;
+    margin: 0.3em;
+}
+
+.course-infos {
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+}
+
+
+.course:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.course img {
+    max-width: 100%;
+    max-height: 200px;
+}
+
+/* Form styles */
+form {
+    margin: 2em;
+    width: 50%;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0;
+}
+
+input,
+textarea {
+    min-height: 40px;
+    margin: 1em 0;
+    padding: 0.5em;
+    border: none;
+    border-bottom: 1px solid #1468a0;
+}
+
+input:focus,
+textarea:focus {
+    border-bottom: 1px solid #48adf0;
+    outline: 0;
+}
+
+/* Button styles */
+.btn, .btn-delete {
+    width: 100%;
+    border: none;
+    color: #f3eeee;
+    font-weight: 600;
+    background-color: #3872a1;
+    transition: background-color 0.5s;
+}
+
+.btn:hover, .btn-delete:hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: #105888;
+}
+
+/* Product page styles */
+.product-page {
+    display: flex;
+}
+
+.product-infos {
+    display: flex;
+    margin: 1em;
+}
+
+.product-img {
+    max-height: max-content;
+    padding: 0.5em;
+    background-color: #eef4f8;
+    border: 1px solid #a6d4f3;
+    text-align: center;
+    font-weight: 800;
+}
+
+.product-img img {
+    max-width: 30vh;
+    max-height: 40vh;
+}
+
+.product-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-actions a, .btn-delete {
+    width: max-content;
+    height: max-content;
+    color: #fff;
+    font-size: 18px;
+    padding: 1em;
+}

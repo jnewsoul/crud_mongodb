@@ -1,0 +1,28 @@
+<div class="page-title">
+    <h2>Novo Curso</h2>
+</div>
+<form action="/products/create" method="POST">
+    <div class="form-control">
+        <label for="name">Nome do curso:</label>
+        <input type="text" name="name" placeholder="Digite o nome do curso" required>
+    </div>
+    <div class="form-control">
+        <label for="price">Preço do curso:</label>
+        <input type="text" name="price" placeholder="Digite o preço do curso" required>
+    </div>
+    <div class="form-control">
+        <label for="category">Categoria:</label>
+        <input type="text" name="category" placeholder="Informe a categoria" required>
+    </div>
+    <div class="form-control">
+        <label for="image">URL da imagem:</label>
+        <input type="text" name="image" placeholder="Digite a URL da imagem:" required>
+    </div>
+    <div class="form-control">
+        <label for="description">Descrição</label>
+        <textarea name="description" placeholder="Descrição do curso" required></textarea>
+    </div>
+    <div>
+        <input type="submit" class="btn" value="Cadastrar" required>
+    </div>
+</form>
